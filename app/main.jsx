@@ -1,3 +1,5 @@
+require('bootstrap/dist/css/bootstrap.css');
+
 import React from 'react';
 import {render} from 'react-dom';
 
@@ -6,11 +8,13 @@ renderShell();
 
 function renderShell() {
     var shell = document.createElement('div');
+
     var CommentBox = React.createClass({
         render: function() {
             return (
-                <div className="commentBox">
-                    Hello, world! I am a CommentBox.
+
+                <div>
+                    Write some text in textbox:
                 </div>
             );
         }
