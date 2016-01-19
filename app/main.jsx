@@ -1,3 +1,4 @@
+//http://stackoverflow.com/questions/30371000/react-bootstrap-using-webpack
 require('bootstrap/dist/css/bootstrap.css');
 
 import React from 'react';
@@ -12,10 +13,9 @@ function renderShell() {
     var CommentBox = React.createClass({
         render: function() {
             return (
-
-                <div>
+                <label>
                     Write some text in textbox:
-                </div>
+                </label>
             );
         }
     });
