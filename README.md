@@ -1,4 +1,7 @@
 # react-fun
+#### Node version
+v5.4.1
+
 #### How to run the react application?
 webpack-dev-server
 
