@@ -3,5 +3,5 @@ import Route from 'react-router'
 import HelloBox from './HelloBox'
 
 export default (
-    <Route path='/hello' component= {HelloBox} />
+    <Route path='hello' component= {HelloBox} />
 )
