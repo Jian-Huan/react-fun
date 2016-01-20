@@ -6,7 +6,7 @@ v5.4.1
 * compile
     * ```webpack```
 * start server
-    * ```webpack-dev-server```
+    * ```webpack-dev-server --content-base build/```
 
 #### How to view the react application?
-http://localhost:8080/webpack-dev-server/bundle
+http://localhost:8080
