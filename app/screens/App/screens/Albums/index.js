@@ -3,5 +3,5 @@ import Route from 'react-router'
 import AlbumList from './AlbumList'
 
 export default (
-    <Route path='album' component= {AlbumList} />
+    <Route path='albums' component= {AlbumList} />
 )
