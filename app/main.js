@@ -10,9 +10,7 @@ var renderShell = () => {
     var shell = document.createElement('div');
 
     document.body.appendChild(shell);
-    render(
-        <Router history = { browserHistory } routes = { appRoutes } />,
-        shell)
+    render(<Router history = { browserHistory } routes = { appRoutes } />, shell)
 };
 
 // init shell

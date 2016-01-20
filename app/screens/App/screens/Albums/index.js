@@ -1,3 +1,7 @@
-/**
- * Created by jianhuan on 1/17/16.
- */
+import React from 'react'
+import Route from 'react-router'
+import AlbumList from './AlbumList'
+
+export default (
+    <Route path='album' component= {AlbumList} />
+)
