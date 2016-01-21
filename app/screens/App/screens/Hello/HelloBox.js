@@ -1,8 +1,13 @@
 import React from 'react'
 
 // ToDo: convert code to es6
-//Step 2 - Convert component from using `createClass` to being an ES6 Class
+//Step 3 - Bind instance methods / callbacks to the instance
 class HelloTextInput extends React.Component {
+    constructor() {
+        super();
+        this._handleChange = this._handleChange.bind(this);
+    }
+
     render() {
         return (
             <input
