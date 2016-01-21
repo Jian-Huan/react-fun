@@ -3,11 +3,6 @@ import React from 'react'
 
 // ToDo: convert code to es6
 const HelloTextInput = React.createClass({
-    propTypes: {
-        inputText: React.PropTypes.string,
-        onUserInput: React.PropTypes.func
-    },
-
     handleChange: function() {
         this.props.onUserInput(this.refs.helloTextInput.value)
     },
@@ -23,6 +18,16 @@ const HelloTextInput = React.createClass({
         )
     }
 })
+
+//Step 1 - Extract `propTypes` and `getDefaultTypes` to properties on the component constructor
+HelloTextInput.propTypes = {
+    inputText: React.PropTypes.string,
+    onUserInput: React.PropTypes.func
+};
+
+HelloTextInput.defaultProps = {
+    inputText: 'default'
+};
 
 class HelloBox extends React.Component{
     constructor() {
