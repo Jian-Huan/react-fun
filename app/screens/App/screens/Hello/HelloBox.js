@@ -3,6 +3,11 @@ import React from 'react'
 
 // ToDo: convert code to es6
 const HelloTextInput = React.createClass({
+    propTypes: {
+        inputText: React.PropTypes.string,
+        onUserInput: React.PropTypes.func
+    },
+
     handleChange: function() {
         this.props.onUserInput(this.refs.helloTextInput.value)
     },
