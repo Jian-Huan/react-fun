@@ -1,5 +1,5 @@
 import React from 'react'
-import HelloTextInput from './components/HelloTextInput'
+import HelloTextInput from './HelloTextInput'
 
 class HelloBox extends React.Component {
     constructor() {
