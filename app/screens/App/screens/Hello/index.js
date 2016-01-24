@@ -1,7 +1,7 @@
 import React from 'react'
 import Route from 'react-router'
-import HelloBox from './components/HelloBox'
+import Hello from './components/Hello'
 
 export default (
-    <Route path='hello' component={HelloBox} />
+    <Route path='hello' component={Hello} />
 )

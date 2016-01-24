@@ -1,6 +1,6 @@
 import React from 'react';
 
-class HelloTextInput extends React.Component {
+class TextInput extends React.Component {
     constructor() {
         super();
         this._handleChange = this._handleChange.bind(this);
@@ -11,24 +11,24 @@ class HelloTextInput extends React.Component {
             <input
                 type="text"
                 value={this.props.inputText}
-                ref="helloTextInput"
+                ref="textInput"
                 onChange={this._handleChange}
             />
         );
     }
 
     _handleChange() {
-        this.props.onUserInput(this.refs.helloTextInput.value);
+        this.props.onUserInput(this.refs.textInput.value);
     }
 }
 
-HelloTextInput.propTypes = {
+TextInput.propTypes = {
     inputText: React.PropTypes.string,
     onUserInput: React.PropTypes.func
 };
 
-HelloTextInput.defaultProps = {
-    inputText: 'default'
+TextInput.defaultProps = {
+    inputText: ''
 };
 
-export default HelloTextInput
+export default TextInput

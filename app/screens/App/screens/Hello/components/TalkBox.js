@@ -1,7 +1,7 @@
 import React from 'react'
 import TextInput from 'components/TextInput'
 
-class HelloBox extends React.Component {
+class TalkBox extends React.Component {
     constructor() {
         super();
         this._handleUserInput = this._handleUserInput.bind(this);
@@ -13,9 +13,9 @@ class HelloBox extends React.Component {
     render() {
         return (
             <div>
-                <span>Write some text in textbox: </span>
+                <span>Let's talk! </span>
                 <TextInput inputText={this.state.inputText} onUserInput={this._handleUserInput}/>
-                <h1>Hello {this.state.inputText}</h1>
+                <h1>I would like to say: {this.state.inputText}</h1>
             </div>
         );
     }
@@ -25,4 +25,4 @@ class HelloBox extends React.Component {
     }
 }
 
-export default HelloBox
+export default TalkBox
