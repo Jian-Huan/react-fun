@@ -5,7 +5,7 @@ class GoodbyeBox extends React.Component {
     constructor() {
         super();
         this._handleUserInput = this._handleUserInput.bind(this);
-        this.state = {inputText: ''}
+        this.state = {inputText: ''};
     }
 
     render() {
