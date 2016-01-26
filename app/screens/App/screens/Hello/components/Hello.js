@@ -2,7 +2,7 @@ import React from 'react'
 import HelloBox from './HelloBox'
 import TalkBox from './TalkBox'
 import GoodbyeBox from './GoodbyeBox'
-import CounterWrap from './CounterWrap'
+import Counter from './Counter'
 
 class Hello extends React.Component {
     render() {
@@ -18,7 +18,7 @@ class Hello extends React.Component {
                     <GoodbyeBox/>
                 </div>
                 <div className="row">
-                    <CounterWrap />
+                    <Counter/>
                 </div>
             </div>
         )

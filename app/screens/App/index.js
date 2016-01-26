@@ -1,6 +1,5 @@
 import React from 'react'
 import Route from 'react-router'
-import { Provider } from 'react-redux'
 import App from './components/App'
 import HelloRoute from './screens/Hello/index'
 import AlbumListRoute from './screens/Albums/index'
