@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react'
-import { connect } from 'react-redux'
 
 class Counter extends Component {
     render() {
@@ -19,18 +18,4 @@ Counter.propTypes = {
     value: PropTypes.number.isRequired
 }
 
-// Which part of the Redux global state does our component want to receive as props?
-function mapStateToProps(state) {
-    return {
-        value: state
-    }
-}
-
-// Which action creators does it want to receive by props?
-function mapDispatchToProps(dispatch) {
-    return {
-        increment: () => dispatch({ type: 'INCREMENT_COUNTER' })
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Counter)
+export default Counter
