@@ -2,6 +2,7 @@ import React from 'react'
 import HelloBox from './HelloBox'
 import TalkBox from './TalkBox'
 import GoodbyeBox from './GoodbyeBox'
+import CounterContainer from '../containers/CounterContainer'
 
 class Hello extends React.Component {
     render() {
@@ -15,6 +16,9 @@ class Hello extends React.Component {
                 </div>
                 <div className="row">
                     <GoodbyeBox/>
+                </div>
+                <div className="row">
+                    <CounterContainer/>
                 </div>
             </div>
         )

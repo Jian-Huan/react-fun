@@ -3,12 +3,11 @@ import React from 'react'
 const AlbumList = React.createClass({
     render() {
         return (
-            <label>
+            <div className="container">
                 Album List!!!
-            </label>
+            </div>
         )
     }
 });
 
 export default AlbumList
-

@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link, Route } from 'react-router'
-import HelloRoute from './screens/Hello/index'
-import AlbumListRoute from './screens/Albums/index'
+import { Link } from 'react-router'
 
-const App = React.createClass({
+class App extends React.Component {
     render() {
         return (
             <div>
@@ -26,11 +24,6 @@ const App = React.createClass({
             </div>
         )
     }
-})
+}
 
-export default (
-    <Route path="/" component={App}>
-        { HelloRoute }
-        { AlbumListRoute }
-    </Route>
-)
+export default App
