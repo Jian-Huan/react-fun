@@ -11,4 +11,3 @@ const AlbumList = React.createClass({
 });
 
 export default AlbumList
-

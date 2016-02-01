@@ -6,8 +6,9 @@ import { render } from 'react-dom'
 import { Router, browserHistory } from 'react-router'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import appRoutes from './screens/App/index'
+import appRoutes from './screens/CarrierReport/index'
 
+// Move to Hello route...
 function counter(state = 0, action) {
     switch (action.type) {
         case 'INCREMENT_COUNTER':
